@@ -1,0 +1,15 @@
+name: retrieval
+channels:
+  - defaults
+dependencies:
+  - streamlit
+  - requests
+  - jupyter
+  - networkx
+  - tqdm
+  - scipy
+  - fastapi
+  - pip:
+    - chromadb
+    - pydantic
+prefix: /opt/miniconda3/envs/retrieval
