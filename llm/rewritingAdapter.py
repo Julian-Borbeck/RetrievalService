@@ -44,7 +44,7 @@ def rewrite_query_k_times(user_query, k = 5):
         },
     }
 
-    r = requests.post(f"{settings.ollama_url}/api/chat", json=payload, timeout=60)
+    r = requests.post(f"{settings.ollama_url}api/chat", json=payload, timeout=60)
     r.raise_for_status()
 
     content = r.json()["message"]["content"]
