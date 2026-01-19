@@ -12,4 +12,5 @@ dependencies:
   - pip:
     - chromadb
     - pydantic
+    - filelock
 prefix: /opt/miniconda3/envs/retrieval
