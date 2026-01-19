@@ -1,7 +1,9 @@
 name: retrieval
 channels:
-  - defaults
+  - conda-forge
 dependencies:
+  - python=3.11
+  - pip
   - streamlit
   - requests
   - jupyter
@@ -9,8 +11,8 @@ dependencies:
   - tqdm
   - scipy
   - fastapi
+  - pydantic>=2,<3
+  - filelock
   - pip:
-    - chromadb
-    - pydantic
-    - filelock
+      - chromadb
 prefix: /opt/miniconda3/envs/retrieval
