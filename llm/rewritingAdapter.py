@@ -20,7 +20,7 @@ def rewrite_query_k_times(user_query, k = 5):
 
     system = (
             "You rewrite user queries for semantic retrieval. \n"
-            "The focus of your retrieval is Multiple Sequence Alignment, the goal is to find documents that help the user run Multiple Sequence Alignment with MUSCLE, MAFFT, Clustal.\n"
+            "The focus of your retrieval is Multiple Sequence Alignment commands, the goal is to find documents that help the user construct commands for Multiple Sequence Alignment with MUSCLE, MAFFT, Clustal.\n"
             "Rules:\n"
             f"- Produce exactly {k} rewritten queries.\n"
             "- Keep meaning identical to the user query.\n"

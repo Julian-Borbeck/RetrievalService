@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, RootModel
 
 class QueryRequest(BaseModel):
     query: str
@@ -8,3 +8,10 @@ class QueryRequest(BaseModel):
 class QueryResponse(BaseModel):
     chunks: list
     metadata: list
+
+class ABItem(BaseModel):
+    corpus: str
+    data: QueryResponse
+
+class ABTestResponse(RootModel[list[ABItem]]):
+    pass

@@ -14,5 +14,6 @@ class Settings(BaseSettings):
     collection_name: str = Field(validation_alias="COLLECTION_NAME")
     embedding_url: AnyUrl = Field(validation_alias="EMBEDDING_URL")
     
+    
 
 settings = Settings()
