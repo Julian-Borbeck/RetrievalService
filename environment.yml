@@ -6,8 +6,6 @@ dependencies:
   - pip
   - streamlit
   - requests
-  - jupyter
-  - networkx
   - tqdm
   - scipy
   - fastapi
@@ -15,4 +13,3 @@ dependencies:
   - filelock
   - pip:
       - chromadb
-prefix: /opt/miniconda3/envs/retrieval
